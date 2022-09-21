@@ -11,7 +11,7 @@ public class Rectangle extends Shape{
 		return height * width;
 	}
 	
-	public double calculateCircumference() {
+	public double calculatePerimeter() {
 		return 2*(height+width);
 	}
 	
