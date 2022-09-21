@@ -20,7 +20,7 @@ public class Triangle extends Shape {
 		return side1+side2+side3;
 	}
 	
-	public String getname() {  //getter method for name
+	public String gettype() {  //getter method for name
 		return this.name;
 	}
 	
