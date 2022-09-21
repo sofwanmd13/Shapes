@@ -55,7 +55,7 @@ public class TestShapes {
 		
 		System.out.println("Calculating areas for your shapes ...");  //Calculating areas for all shapes in ArrayList and displaying them
 		for(int i=0;i<shapes.size();i++) {
-			System.out.println("Area of Shape " + (i) + ": " + shapes.get(i).calculateArea());
+			System.out.printf("Area of Shape " + (i+1) + ": %.2f\n", shapes.get(i).calculateArea());
 		}
 		input.close();
 		
