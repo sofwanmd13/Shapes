@@ -30,16 +30,16 @@ public class Triangle extends Shape {
 		return this.side3;
 	}
 	
-	public void setHeight(double height) {  //setter method for height
-		this.height = height;
+	public void setside1(double side) {  //setter method for side1
+		this.side1 = side;
 	}
 	
-	public void setBase(double base) {  //setter method for base
-		this.base = base;
+	public void setside2(double side) {  //setter method for side2
+		this.side2 = side;
 	}
 	
+	public void setside3(double side) {  //setter method for side3
+		this.side3 = side;
+	}
 	
-
 }
-
-
