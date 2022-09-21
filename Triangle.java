@@ -18,12 +18,16 @@ public class Triangle extends Shape {
 		return side1+side2+side3;
 	}
 	
-	public double getHeight() {  //getter method for height
-		return this.height;
+	public double getside1() {  //getter method for side1
+		return this.side1;
 	}
 	
-	public double getBase() {  //getter method for base
-		return this.base;
+	public double getside2() {  //getter method for side2
+		return this.side2;
+	}
+	
+	public double getside3() {  //getter method for side3
+		return this.side3;
 	}
 	
 	public void setHeight(double height) {  //setter method for height
