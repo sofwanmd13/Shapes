@@ -2,11 +2,13 @@ public class Triangle extends Shape {
 	private double side1;
 	private double side2;
 	private double side3;
+	private String name;
 	
-	public Triangle(double side1, double side2, double side3) {  //Constructor for Triangle
+	public Triangle(double side1, double side2, double side3, String name) {  //Constructor for Triangle
 		this.side1 = side1;
 		this.side2 = side2;
 		this.side3 = side3;
+		this.name = name;
 	}
 
 	public double calculateArea() {  //Abstract Area method from Shape Class, Using Heron's Formula so it works with all kinds of triangles
@@ -16,6 +18,10 @@ public class Triangle extends Shape {
 	
 	public double calculatePerimeter() {  //Abstract Perimeter method from Shape Class
 		return side1+side2+side3;
+	}
+	
+	public String getname() {  //getter method for name
+		return this.name;
 	}
 	
 	public double getside1() {  //getter method for side1
