@@ -53,10 +53,16 @@ public class TestShapes {
 				
 		}while (!(shape.equals("Q")||shape.equals("q")));  //Loop condition to run till Q/q is entered to quit
 		
-		System.out.println("Calculating Areas and Perimeters for your shapes ...\n");  //Calculating areas for all shapes in ArrayList and displaying them
+		System.out.println("Calculating Areas and Perimeters for your shapes ...\n");  //Calculating areas and perimeters for all shapes in ArrayList and displaying them
 		for(int i=0;i<shapes.size();i++) {
-			System.out.printf("Area of Shape " + (i+1) + ": %.2f\n", shapes.get(i).calculateArea());
-			System.out.printf("Perimeter of Shape " + (i+1) + ": %.2f\n\n", shapes.get(i).calculatePerimeter());
+			System.out.printf("Area of Shape " + (i+1) + ", " + shapes.get(i).gettype() + ": %.2f\n", shapes.get(i).calculateArea());
+			
+			if (shapes.get(i).gettype() == "Circle") {  //Using different statement in case of Circle
+				System.out.printf("Circumference of Shape " + ", " + shapes.get(i).gettype() + ": %.2f\n\n", shapes.get(i).calculatePerimeter());
+			}
+			else {
+				System.out.printf("Perimeter of Shape " + ", " + shapes.get(i).gettype() + ": %.2f\n\n", shapes.get(i).calculatePerimeter());	
+			}
 		}
 		input.close();
 		
