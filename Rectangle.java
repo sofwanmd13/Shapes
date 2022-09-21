@@ -1,18 +1,24 @@
 public class Rectangle extends Shape{
 	private double height;
 	private double width;
+	private String name;
 	
 	public Rectangle(double height, double width) {  //Constructor
 		this.height = height;
 		this.width = width;
+		this.name = "Rectangle";
 	}
 	
-	public double calculateArea() {  //Abstract method from Shape class
+	public double calculateArea() {  //Abstract methods from Shape class
 		return height * width;
 	}
 	
 	public double calculatePerimeter() {
 		return 2*(height+width);
+	}
+	
+	public String gettype() {  //getter method for name
+		return this.name;
 	}
 	
 	public double getHeight() {  //getter method for height
