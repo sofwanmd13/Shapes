@@ -17,7 +17,7 @@ public class Circle extends Shape{
 		return Math.PI*radius*radius;
 	}
 	
-	public double calculateCircumference() {  //implementation of calculateCircumference() method for this class
+	public double calculatePerimeter() {  //implementation of calculatePerimeter() method for this class
 		return Math.PI*radius*2;
 	}
 }
