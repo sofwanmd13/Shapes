@@ -14,9 +14,8 @@ public class Triangle extends Shape {
 		return Math.pow((x*(x-side1)*(x-side2)*(x-side3)), 0.5);
 	}
 	
-	public double calculateCircumference() {  //Only works with Right-angled triangles
-		double hyp = Math.pow((height*height)+(base*base),0.5);
-		return height+base+hyp;
+	public double calculatePerimeter() {  //Abstract Perimeter method from Shape Class
+		return side1+side2+side3;
 	}
 	
 	public double getHeight() {  //getter method for height
