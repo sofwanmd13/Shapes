@@ -29,6 +29,10 @@ public class Rectangle extends Shape{
 		return this.width;
 	}
 	
+	public void settype(String name) {  //setter method for shape type
+		this.name = name;
+	}
+	
 	public void setHeight(double height) {  //setter method for height
 		this.height = height;
 	}
