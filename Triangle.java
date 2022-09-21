@@ -9,11 +9,12 @@ public class Triangle extends Shape {
 		this.side2 = side2;
 	}
 
-	public double calculateArea() { //Abstract methods from Shape Class
-		return 0.5*height*base;
+	public double calculateArea() {  //Abstract Area method from Shape Class
+		double x = (side1+side2+base)/2;
+		return Math.pow((x(x-a)(x-b)(x-c)), 0.5);
 	}
 	
-	public double calculateCircumference() { //Only works with Right-angled triangles
+	public double calculateCircumference() {  //Only works with Right-angled triangles
 		double hyp = Math.pow((height*height)+(base*base),0.5);
 		return height+base+hyp;
 	}
