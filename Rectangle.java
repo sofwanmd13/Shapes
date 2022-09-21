@@ -17,7 +17,7 @@ public class Rectangle extends Shape{
 		return 2*(height+width);
 	}
 	
-	public String gettype() {  //getter method for name
+	public String gettype() {  //getter method for shape type
 		return this.name;
 	}
 	
