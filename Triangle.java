@@ -1,17 +1,17 @@
 public class Triangle extends Shape {
-	private double base;
 	private double side1;
 	private double side2;
+	private double side3;
 	
-	public Triangle(double base, double side1, double side2) {  //Constructor for Triangle
-		this.base = base;
+	public Triangle(double side1, double side2, double side3) {  //Constructor for Triangle
 		this.side1 = side1;
 		this.side2 = side2;
+		this.side3 = side3;
 	}
 
-	public double calculateArea() {  //Abstract Area method from Shape Class
-		double x = (side1+side2+base)/2;
-		return Math.pow((x(x-a)(x-b)(x-c)), 0.5);
+	public double calculateArea() {  //Abstract Area method from Shape Class, Using Heron's Formula so it works with all kinds of triangles
+		double x = (side1+side2+side3)/2;
+		return Math.pow((x*(x-side1)*(x-side2)*(x-side3)), 0.5);
 	}
 	
 	public double calculateCircumference() {  //Only works with Right-angled triangles
